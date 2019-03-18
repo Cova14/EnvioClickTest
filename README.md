@@ -66,3 +66,12 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+
+## Datos generales
+
+En esta aplicación se utilizaron ciertas características de React Hooks y de ES5
+Es una aplicación muy sencilla, la cuál simplemente intenta resolver el problema planteado, el cuál es crear cards usando datos consultados de una API.
+Hay mucho estilo que se puede y debe mejorar, lo cuál se planea hacer cuando sea posible.
+
+Gracias por ver esta app!

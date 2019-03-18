@@ -1,28 +1,33 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
+import React, { useEffect, useState } from 'react';
+import Card from './components/Card'
+import axios from 'axios'
 import './App.css';
 
-class App extends Component {
-  render() {
+function App () {
+  
+  const [data, setData] = useState([])
+
+  useEffect(() => {
+    //we get the data from the API
+    getDataFromAPI()
+  }, [])
+
+  function getDataFromAPI () {
+    axios.get('https://reqres.in/api/users?delay=50')
+    .then(response => {
+      console.log(response.data.data)
+      setData(response.data.data)
+      console.log(data)
+    }).catch(error => {
+      console.log(error)
+    })
+  }
+  
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+        <Card />
       </div>
     );
-  }
 }
 
 export default App;

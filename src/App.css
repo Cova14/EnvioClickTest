@@ -1,4 +1,12 @@
 .App {
   text-align: center;
   background-color: rgb(219, 219, 219);
+  margin: 0;
+}
+
+section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 15px;
+  padding: 20px;
 }

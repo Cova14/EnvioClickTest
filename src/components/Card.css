@@ -1,28 +1,33 @@
-section {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 15px;
-  padding: 25px;
-}
 
-section article {
-  overflow: hidden;
+article {
   background-color: #fff;
   border-radius: 5px;
   box-shadow: 0 3px 3px rgba(0, 0, 0, .2)
 }
 
-section article:hover {
-
-}
-
-section article img {
-  max-width: 100%;
+article img {
   padding-top: 5px;
   border-radius: 50%;
+  transition: 40ms;
 }
 
-section article p:nth-child(2) {
+article p {
+  padding-left: 20px;
+  text-align: left;
+}
+
+article p {
   font-weight: bold;
   font-size: 1.2rem;
+}
+
+article div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.social-media {
+  height: 30px;
+  border-radius: 30%;
 }

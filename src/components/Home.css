@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+}
+
+:root {
+    --black: rgb(8, 8, 8);
+}
+
+header {
+    margin: 0;
+    padding-left: 10px;
+    background-color: var(--black);
+    color: white;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 5px 3px rgba(0, 0, 0, 0.452);
+}
+
+header ul{
+    width: 25%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    position: relative;
+    height: 100%;
+}
+
+header ul li {
+    list-style: none;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .4s ease-out;
+    cursor: pointer;
+}
+
+header ul li:hover {
+    background-color: rgba(252, 250, 250, 0.322);
+}
+
+.info {
+    margin: 0;
+    min-height: 50vh;
+    background-image: url('https://www.solofondos.com/wp-content/uploads/2016/07/wallpapers-hd-para-pc-tumblr-1024x576.jpg');
+}
+
+.info-container {
+    color: white;
+    padding: 5px;
+}
+
+.cards-header-separator p {
+    margin: 10px;
+}
+
+footer {
+    position: absolute;
+    right: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    height: 50px;
+    background-color: var(--black);
+    position: absolute;
+    width: 100%;
+}
+.custom-link {
+    color: white;
+}

@@ -36,4 +36,4 @@ Es una aplicación muy sencilla, la cuál simplemente intenta resolver el proble
 
 Hay mucho estilo que se puede y debe mejorar, lo cuál se planea hacer cuando sea posible.
 
-Gracias por ver esta app!
+¡Gracias por ver esta app!
